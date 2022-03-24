@@ -1,0 +1,19 @@
+.navbar-container{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: space-between;
+    height: 80px;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+.navbar-info a{
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1.5em;
+    color: white;
+}
+.navbar-info a:hover{
+    color: yellow;
+}
+
