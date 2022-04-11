@@ -1,0 +1,40 @@
+.review{
+    border-radius: 10px;
+    border: 2px solid gainsboro;
+     width: 570px;
+     display: flex;
+     margin-top: 10px;
+    
+    
+}
+.review img{
+    height: 100px;
+    width: 100px;
+}
+
+.reviewitem-container{
+    width: 100%;
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+}
+.reviewitem-details p{
+margin: 0;
+margin-left: 5px;
+}
+.icon{
+    font-size: 30px;
+    color: red;
+    margin-right: 10px;
+    background-color: antiquewhite;
+    border-radius: 15px;
+   
+}
+.review-delete{
+    border-radius: 50%;
+    border: none;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
