@@ -1,4 +1,4 @@
-.navbar-container{
+.navbar-container {
     display: flex;
     align-items: center;
     background-color: black;
@@ -7,13 +7,24 @@
     padding-left: 140px;
     padding-right: 140px;
 }
-.navbar-info a{
+
+.navbar-info a {
     text-decoration: none;
     margin-right: 20px;
     font-size: 1.5em;
     color: white;
 }
-.navbar-info a:hover{
+
+.navbar-info a:hover {
     color: yellow;
+
 }
 
+.btn {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: aqua;
+}

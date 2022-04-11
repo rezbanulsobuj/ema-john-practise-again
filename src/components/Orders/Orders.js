@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
 import useCart from '../../Hooks/useCart';
 import useProducts from '../../Hooks/useProducts';
 import Cart from '../Navbar/Shop/Cart/Cart';
@@ -7,7 +8,8 @@ import ReviewItem from '../ReviewItem/ReviewItem';
 import './Orders.css'
 
 const Orders = () => {
-    const [products, setProduct] = useProducts()
+    const navigate = useNavigate(auth)
+    const [products] = useProducts()
     const [cart, setCart] = useCart(products)
     const haldleDeleteCart = (product) => {
         const rest = cart.filter(pd => pd.id !== product.id)
@@ -27,7 +29,7 @@ const Orders = () => {
             <div className="cart-container">
                 <Cart cart={cart}>
                     <Link to="/inventory">
-                        <button>proceured</button>
+                        <button onClick={() => navigate('/shipment')}>proceured</button>
                     </Link>
                 </Cart>
             </div>

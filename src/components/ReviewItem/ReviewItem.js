@@ -5,7 +5,7 @@ import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 
 const ReviewItem = (props) => {
     const { product, haldleDeleteCart } = props
-    const { name, price, shipping, quantity, img } = product
+    const { name, price, shipping, img } = product
     return (
         <div className='review'>
             <div>

@@ -23,7 +23,7 @@ const SetUp = () => {
         setConfirmPassword(event.target.value)
     }
     if (user) {
-        navigate('/home')
+        navigate('/login')
     }
     const haldleCreateUser = event => {
         event.preventDefault();
